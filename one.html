@@ -6,12 +6,12 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<style>
 		a.one {
-			width:80px;
-			height:80px;
+			width:60px;
+			height:60px;
 			background:white;
-			-moz-border-radius:40px;
-			-webkit-border-radius:40px;
-			border-radius:40px;
+			-moz-border-radius:30px;
+			-webkit-border-radius:30px;
+			border-radius:30px;
 			position: fixed; 
 			bottom: 20px; 
 			right: 20px;
@@ -19,15 +19,30 @@
 			display:table-cell;
 			vertical-align:middle;
 			font-family:calibri;
-			font-size:64px;
+			font-size:48px;
 			box-shadow:0px 0px 10px #000;
 			text-decoration:none;
 		}
+		a.two {
+			width:80px;
+			height:80px;
+			background:#b3145a;
+			-moz-border-radius:40px;
+			-webkit-border-radius:40px;
+			border-radius:40px;
+			position: fixed; 
+			bottom: 40%; 
+			right: 5px;
+			box-shadow:0px 0px 10px #000;
+		}
+		.container{
+		background-color:white;
+		height:100%;}
 	</style>
 </head>
-<body bgcolor = "gray">
+<body style="background-color:gray">
 	<div class = "container">ahsj</div>
-	<a class = "one" href="#Top">^</a>	
-	
+	<a class = "one" href ="#Top" data-toogle="tooltip" data-placement="left" title="Go to top">^</a>	
+	<a class = "two" href ="#" ></a>
 	<script src="js/bootstrap.min.js"></script>
 </body>	
