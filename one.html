@@ -8,7 +8,7 @@
 		a.one {
 			width:60px;
 			height:60px;
-			background:white;
+			background-color:white;
 			-moz-border-radius:30px;
 			-webkit-border-radius:30px;
 			border-radius:30px;
@@ -26,7 +26,7 @@
 		a.two {
 			width:100px;
 			height:100px;
-			background:#b3145a;
+			background-color:#b3145a;
 			-moz-border-radius:50px;
 			-webkit-border-radius:50px;
 			border-radius:50px;
@@ -37,9 +37,6 @@
 		}
 		.container{
 		height:100%;
-		}
-		a:hover{
-		color:red;
 		}
 		a.product{
 		text-decoration:none;
@@ -53,13 +50,26 @@
 		padding:15px;
 		}
 		a.product:hover{
+		color:#b3145a;
 		box-shadow:0px 0px 10px #000;
+		}
+		button.btn-link{
+		font-size:20px;
+		margin-right:4px;
+		padding-bottom:14px;
+		color:black;}
+		button.btn-link:hover{
+		color:#b3145a;
+		font-size:24px;
 		}
 	</style>
 </head>
 <body style="background-color:#e0e0e0">
 	<div class = "container">
-	<a class="product" href="#"><img src="galaxy.jpg" width="270px" height="360px"></img><hr style="color:gray">Product Name</a>
+	<a class="product" href="#">
+		<img src="galaxy.jpg" width="270px" height="360px"></img>
+		<hr style="color:gray">
+		Product Name<button type="button" class="btn btn-link" style="float:right"><span class="glyphicon glyphicon-share-alt"></span></button></a>
 	</div>
 	<a class = "one" href ="#Top" data-toogle="tooltip" data-placement="left" title="Go to top">^</a>	
 	<a class = "two" href ="#"><img src="cs.png"></img></a>
